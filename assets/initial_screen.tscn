@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://b0fkkrgki3ayt"]
+
+[ext_resource type="Script" uid="uid://d0jb7cdodc13e" path="res://scripts/initial_screen.gd" id="1_gjfdd"]
+[ext_resource type="Texture2D" uid="uid://c30aufk2hp0kw" path="res://assets/Screenshot 2026-03-17 17-03-44.png" id="2_gjfdd"]
+[ext_resource type="Texture2D" uid="uid://dy3gtb6ltbait" path="res://assets/Five Nights (1).png" id="3_iic0m"]
+
+[node name="initial_screen" type="Control" unique_id=2111307224]
+layout_mode = 3
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = -56.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gjfdd")
+
+[node name="background" type="TextureRect" parent="." unique_id=537470013]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+texture = ExtResource("2_gjfdd")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1435943036]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 2.2220001
+anchor_bottom = 2.2220001
+offset_left = -425.0
+offset_top = -426.0
+offset_right = 439.55994
+offset_bottom = 252.39795
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 70
+theme_override_constants/margin_right = 70
+theme_override_constants/margin_bottom = 70
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1239052273]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1260565572]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="name" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=1389702658]
+custom_minimum_size = Vector2(0.04, 0)
+layout_direction = 1
+layout_mode = 2
+texture = ExtResource("3_iic0m")
+
+[node name="start" type="Button" parent="MarginContainer/VBoxContainer" unique_id=760080594]
+layout_mode = 2
+text = "Start"
+
+[node name="credits" type="Button" parent="MarginContainer/VBoxContainer" unique_id=745829064]
+layout_mode = 2
+text = "Credits"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=75243197]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
