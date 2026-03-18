@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dvt118buldpry"]
+
+[ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="1_gnosd"]
+[ext_resource type="Texture2D" uid="uid://j56j3r4f2lmo" path="res://icon.svg" id="2_41v5o"]
+
+[node name="perguntas" type="Node2D" unique_id=85574717]
+
+[node name="Control" type="Control" parent="." unique_id=1883341733]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 1.0
+offset_right = 56.0
+offset_bottom = 41.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=266413288]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=131818711]
+layout_mode = 0
+offset_left = -15.0
+offset_right = 55.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer" unique_id=1619479853]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer" unique_id=524124766]
+layout_mode = 2
+text = "ddd"
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer" unique_id=551400387]
+layout_mode = 2
+text = "dd"
+script = ExtResource("1_gnosd")
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer/HBoxContainer" unique_id=1031577253]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/VBoxContainer/HBoxContainer" unique_id=1556170682]
+visible = false
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer/HBoxContainer/Panel" unique_id=1228903881]
+layout_mode = 0
+offset_left = -74.0
+offset_right = -34.0
+texture = ExtResource("2_41v5o")
+
+[node name="Button" type="Button" parent="Control/VBoxContainer/HBoxContainer/Panel" unique_id=1640842522]
+layout_mode = 0
+offset_left = -74.0
+offset_top = 4.0
+offset_right = -34.0
+offset_bottom = 12.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1424160882]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="Control/VBoxContainer/HBoxContainer/Button" to="Control/VBoxContainer/HBoxContainer/Button" method="_on_pressed"]

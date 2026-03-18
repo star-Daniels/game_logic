@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://rvtd0uyiw31o"]
+
+[node name="perguntas" type="Node2D" unique_id=171511712]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=560493360]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1855130741]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 42.0
+offset_bottom = 41.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=771873884]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=525858629]
+layout_mode = 2

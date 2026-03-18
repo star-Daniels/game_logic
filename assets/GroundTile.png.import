@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djmpiq8cx0slx"
-path="res://.godot/imported/fundo.png-7f1d534170c882de29b146325f0dcf2d.ctex"
+uid="uid://b18rby5r3qa5q"
+path="res://.godot/imported/GroundTile.png-34d1a49863fcfecfcc9694b4fe632f3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/fundo.png"
-dest_files=["res://.godot/imported/fundo.png-7f1d534170c882de29b146325f0dcf2d.ctex"]
+source_file="res://assets/GroundTile.png"
+dest_files=["res://.godot/imported/GroundTile.png-34d1a49863fcfecfcc9694b4fe632f3a.ctex"]
 
 [params]
 

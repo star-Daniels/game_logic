@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djmpiq8cx0slx"
-path="res://.godot/imported/fundo.png-7f1d534170c882de29b146325f0dcf2d.ctex"
+uid="uid://difk564dojxwl"
+path="res://.godot/imported/Sprite-cerca.png-8b0da716a714d3a7408114c3d126c190.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/fundo.png"
-dest_files=["res://.godot/imported/fundo.png-7f1d534170c882de29b146325f0dcf2d.ctex"]
+source_file="res://assets/Sprite-cerca.png"
+dest_files=["res://.godot/imported/Sprite-cerca.png-8b0da716a714d3a7408114c3d126c190.ctex"]
 
 [params]
 

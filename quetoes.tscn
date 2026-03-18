@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://crthnfoipdip1"]
+
+[ext_resource type="PackedScene" uid="uid://c7kwbuiebpcaq" path="res://cenas/personagens/player.tscn" id="1_fcj1k"]
+
+[node name="Control" type="Control" unique_id=1558933406]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=749177099]
+layout_mode = 0
+offset_left = -76.0
+offset_top = -51.0
+offset_right = -36.0
+offset_bottom = -11.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1650365387]
+layout_mode = 0
+offset_left = -133.0
+offset_top = -13.0
+offset_right = -93.0
+offset_bottom = 27.0
+
+[node name="player" parent="." unique_id=361126147 instance=ExtResource("1_fcj1k")]
+position = Vector2(8, -13)
