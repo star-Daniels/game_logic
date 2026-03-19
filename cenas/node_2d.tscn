@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b18rby5r3qa5q" path="res://assets/GroundTile.png" id="2_smc2o"]
 [ext_resource type="Texture2D" uid="uid://b83er20f77oao" path="res://Sprites/mario.png" id="3_1ikvx"]
 [ext_resource type="Script" uid="uid://b60m6sr1o3sgl" path="res://scripts/mario.gd" id="3_ovvm4"]
-[ext_resource type="Texture2D" uid="uid://j56j3r4f2lmo" path="res://icon.svg" id="6_6snwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ovvm4"]
 texture = ExtResource("2_smc2o")
@@ -723,18 +722,4 @@ script = SubResource("GDScript_smc2o")
 position = Vector2(-5.875, 18.5)
 shape = SubResource("RectangleShape2D_1ikvx")
 
-[node name="door_2" type="Area2D" parent="." unique_id=1941020232]
-position = Vector2(30, -192)
-script = SubResource("GDScript_smc2o")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="door_2" unique_id=635675597]
-position = Vector2(6.75, 17)
-shape = SubResource("RectangleShape2D_1ikvx")
-
-[node name="Sprite2D" type="Sprite2D" parent="door_2" unique_id=774798284]
-position = Vector2(6.999998, 17.500006)
-scale = Vector2(0.29687503, 0.16406253)
-texture = ExtResource("6_6snwf")
-
 [connection signal="body_entered" from="door_1" to="door_1" method="_on_body_entered"]
-[connection signal="body_entered" from="door_2" to="door_2" method="_on_body_entered"]

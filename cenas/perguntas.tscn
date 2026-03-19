@@ -5,9 +5,19 @@
 [ext_resource type="Texture2D" uid="uid://c3l0rob4phxeu" path="res://assets/Beto.png" id="3_fg1l6"]
 [ext_resource type="Texture2D" uid="uid://bal7s77y14y37" path="res://assets/Ana.png" id="4_fg1l6"]
 [ext_resource type="Texture2D" uid="uid://dp8or4is11kna" path="res://assets/Clara.png" id="5_l6gqu"]
+[ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="6_l6gqu"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_fg1l6"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fg1l6"]
+blend_mode = 1
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_41v5o"]
 specular_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_l6gqu"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jcrnc"]
 
 [node name="perguntas" type="Node2D" unique_id=85574717]
 
@@ -19,53 +29,72 @@ offset_top = 1.0
 offset_right = 100.0
 offset_bottom = 207.0
 
-[node name="TextureRect" type="TextureRect" parent="Control" unique_id=266413288]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1424160882]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.4
-anchor_right = 10.614
-anchor_bottom = 0.694
-offset_left = 6.0
+anchor_left = -0.40300003
+anchor_right = 15.625001
+anchor_bottom = 3.15
+offset_left = 0.016002655
 offset_top = -1.0
-offset_right = -0.0079956055
-offset_bottom = 0.035995483
+offset_right = -0.00012207031
+offset_bottom = 0.099975586
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=131818711]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer" unique_id=994026036]
+self_modulate = Color(0.047058824, 0.047058824, 0.047058824, 1)
 layout_mode = 2
-alignment = 1
+texture = SubResource("CanvasTexture_fg1l6")
 
-[node name="container_1" type="MarginContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=2052764890]
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/TextureRect" unique_id=633307167]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1154.0
+offset_bottom = 646.0
+theme_override_constants/margin_left = 11
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 11
+theme_override_constants/margin_bottom = 11
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer" unique_id=131818711]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1529765655]
+layout_mode = 2
+
+[node name="VSeparator5" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=146218206]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_fg1l6")
+layout_mode = 2
+
+[node name="container_1" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2052764890]
 layout_mode = 2
 script = ExtResource("1_qlvjy")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/container_1" unique_id=1619479853]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" unique_id=1619479853]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=524124766]
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=524124766]
 layout_mode = 2
-text = "pergunta"
+text = "Quem tem 28 anos beto"
 
-[node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=551400387]
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=551400387]
 layout_mode = 2
 text = "abrir/fechar"
 script = ExtResource("1_gnosd")
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1031577253]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1031577253]
 layout_mode = 2
 expand_mode = 2
 
-[node name="Panel" type="Panel" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1556170682]
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1556170682]
 visible = false
 layout_mode = 2
 
-[node name="fundo" type="TextureRect" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=791382732]
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=791382732]
 self_modulate = Color(0.3403393, 0.34033936, 0.34033924, 1)
 layout_mode = 1
 anchors_preset = -1
@@ -78,7 +107,7 @@ grow_vertical = 2
 texture = SubResource("CanvasTexture_41v5o")
 expand_mode = 1
 
-[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=2046630535]
+[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=2046630535]
 layout_mode = 0
 offset_left = 104.0
 offset_top = -1.0
@@ -87,7 +116,7 @@ offset_bottom = 39.0
 texture_normal = ExtResource("4_fg1l6")
 stretch_mode = 6
 
-[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1880391675]
+[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1880391675]
 layout_mode = 0
 offset_left = 53.0
 offset_top = -2.0
@@ -96,7 +125,7 @@ offset_bottom = 38.0
 texture_normal = ExtResource("5_l6gqu")
 stretch_mode = 6
 
-[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=617025140]
+[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=617025140]
 layout_mode = 0
 offset_left = 5.0
 offset_right = 45.0
@@ -104,37 +133,31 @@ offset_bottom = 39.0
 texture_normal = ExtResource("3_fg1l6")
 stretch_mode = 6
 
-[node name="VSeparator" type="VSeparator" parent="Control/MarginContainer/VBoxContainer" unique_id=357339001]
-layout_mode = 2
-
-[node name="VSeparator2" type="VSeparator" parent="Control/MarginContainer/VBoxContainer" unique_id=918070582]
-layout_mode = 2
-
-[node name="container_2" type="MarginContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=378195873]
+[node name="container_2" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=378195873]
 layout_mode = 2
 script = ExtResource("1_qlvjy")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/container_2" unique_id=389000549]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" unique_id=389000549]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=632092788]
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=632092788]
 layout_mode = 2
-text = "pergunta"
+text = "Quem implementou busca binária carla"
 
-[node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=1763088704]
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=1763088704]
 layout_mode = 2
 text = "abrir/fechar"
 script = ExtResource("1_gnosd")
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=854938119]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=854938119]
 layout_mode = 2
 expand_mode = 2
 
-[node name="Panel" type="Panel" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=428890718]
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=428890718]
 visible = false
 layout_mode = 2
 
-[node name="fundo" type="TextureRect" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel" unique_id=399479277]
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel" unique_id=399479277]
 self_modulate = Color(0.3403393, 0.34033936, 0.34033924, 1)
 layout_mode = 1
 anchors_preset = -1
@@ -147,7 +170,7 @@ grow_vertical = 2
 texture = SubResource("CanvasTexture_41v5o")
 expand_mode = 1
 
-[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1121379067]
+[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1121379067]
 layout_mode = 0
 offset_left = 104.0
 offset_top = -1.0
@@ -156,7 +179,7 @@ offset_bottom = 39.0
 texture_normal = ExtResource("4_fg1l6")
 stretch_mode = 6
 
-[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1962619691]
+[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1962619691]
 layout_mode = 0
 offset_left = 53.0
 offset_top = -2.0
@@ -165,7 +188,7 @@ offset_bottom = 38.0
 texture_normal = ExtResource("5_l6gqu")
 stretch_mode = 6
 
-[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=343860956]
+[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=343860956]
 layout_mode = 0
 offset_left = 5.0
 offset_right = 45.0
@@ -173,11 +196,273 @@ offset_bottom = 39.0
 texture_normal = ExtResource("3_fg1l6")
 stretch_mode = 6
 
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/VBoxContainer/container_1" method="_on_btn_ana_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/VBoxContainer/container_1" method="_on_btn_carla_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/VBoxContainer/container_1" method="_on_btn_beto_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" to="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/VBoxContainer/container_2" method="_on_btn_ana_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/VBoxContainer/container_2" method="_on_btn_carla_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/VBoxContainer/container_2" method="_on_btn_beto_pressed"]
+[node name="container_3" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=888920321]
+layout_mode = 2
+script = ExtResource("1_qlvjy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" unique_id=957397584]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=1850780595]
+layout_mode = 2
+text = "Quem implementou Quicksort Beto"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=159306064]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("1_gnosd")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=149931302]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=1339390825]
+visible = false
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel" unique_id=381323050]
+self_modulate = Color(0.3403393, 0.34033936, 0.34033924, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 38.800003
+offset_top = -3.0
+offset_right = 199.8
+offset_bottom = -43.004005
+grow_vertical = 2
+texture = SubResource("CanvasTexture_41v5o")
+expand_mode = 1
+
+[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=527933448]
+layout_mode = 0
+offset_left = 104.0
+offset_top = -1.0
+offset_right = 144.0
+offset_bottom = 39.0
+texture_normal = ExtResource("4_fg1l6")
+stretch_mode = 6
+
+[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=1661907351]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -2.0
+offset_right = 97.0
+offset_bottom = 38.0
+texture_normal = ExtResource("5_l6gqu")
+stretch_mode = 6
+
+[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=344813155]
+layout_mode = 0
+offset_left = 5.0
+offset_right = 45.0
+offset_bottom = 39.0
+texture_normal = ExtResource("3_fg1l6")
+stretch_mode = 6
+
+[node name="container_4" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=268293123]
+layout_mode = 2
+script = ExtResource("1_qlvjy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" unique_id=153607349]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=378885983]
+layout_mode = 2
+text = "Quem implementou cálculo fatorial ana"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=677397199]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("1_gnosd")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=875855193]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=1729640614]
+visible = false
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel" unique_id=1251735415]
+self_modulate = Color(0.3403393, 0.34033936, 0.34033924, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 38.800003
+offset_top = -3.0
+offset_right = 199.8
+offset_bottom = -43.004005
+grow_vertical = 2
+texture = SubResource("CanvasTexture_41v5o")
+expand_mode = 1
+
+[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=974712634]
+layout_mode = 0
+offset_left = 104.0
+offset_top = -1.0
+offset_right = 144.0
+offset_bottom = 39.0
+texture_normal = ExtResource("4_fg1l6")
+stretch_mode = 6
+
+[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=1914066443]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -2.0
+offset_right = 97.0
+offset_bottom = 38.0
+texture_normal = ExtResource("5_l6gqu")
+stretch_mode = 6
+
+[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=351189005]
+layout_mode = 0
+offset_left = 5.0
+offset_right = 45.0
+offset_bottom = 39.0
+texture_normal = ExtResource("3_fg1l6")
+stretch_mode = 6
+
+[node name="container_5" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1329223624]
+layout_mode = 2
+script = ExtResource("1_qlvjy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" unique_id=22345622]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer" unique_id=1917549799]
+layout_mode = 2
+text = "Quem é o(a) mais novo(a): Carla"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer" unique_id=1952276191]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("1_gnosd")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer" unique_id=52472300]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer" unique_id=429992865]
+visible = false
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel" unique_id=1071996720]
+self_modulate = Color(0.3403393, 0.34033936, 0.34033924, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 38.800003
+offset_top = -3.0
+offset_right = 199.8
+offset_bottom = -43.004005
+grow_vertical = 2
+texture = SubResource("CanvasTexture_41v5o")
+expand_mode = 1
+
+[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=1236778308]
+layout_mode = 0
+offset_left = 104.0
+offset_top = -1.0
+offset_right = 144.0
+offset_bottom = 39.0
+texture_normal = ExtResource("4_fg1l6")
+stretch_mode = 6
+
+[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=288181888]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -2.0
+offset_right = 97.0
+offset_bottom = 38.0
+texture_normal = ExtResource("5_l6gqu")
+stretch_mode = 6
+
+[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=2064962839]
+layout_mode = 0
+offset_left = 5.0
+offset_right = 45.0
+offset_bottom = 39.0
+texture_normal = ExtResource("3_fg1l6")
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=897924008]
+self_modulate = Color(0.2, 0.2, 0.2, 1)
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 38.0
+texture = SubResource("CanvasTexture_l6gqu")
+
+[node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2" unique_id=1207890351]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 8.0
+offset_right = 1156.0
+offset_bottom = 39.0
+text = "X"
+
+[node name="btn_voltar" type="TextureButton" parent="Control/MarginContainer/TextureRect/TextureRect2/Label2" unique_id=1406154642]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -5.0
+offset_right = 27.0
+offset_bottom = 31.0
+script = ExtResource("6_l6gqu")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/TextureRect2" unique_id=665400899]
+self_modulate = Color(0.047058824, 0.047058824, 0.047058824, 1)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 46.0
+texture = SubResource("CanvasTexture_jcrnc")
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect" unique_id=728287650]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 176.0
+offset_bottom = 30.0
+theme_override_constants/line_spacing = 5
+theme_override_font_sizes/font_size = 13
+text = "Prompt de comando"
+
+[node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect" unique_id=212054568]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 9.0
+offset_right = 241.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 13
+text = "X"
+
+[node name="btn_voltar" type="TextureButton" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2" unique_id=134149558]
+layout_mode = 0
+offset_left = -22.0
+offset_top = -14.0
+offset_right = 18.0
+offset_bottom = 22.0
+script = ExtResource("6_l6gqu")
+
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_carla_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_carla_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_carla_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_carla_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" method="_on_btn_carla_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" to="Control/MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" to="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" method="_on_pressed"]
