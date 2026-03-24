@@ -88,11 +88,11 @@ text = "parte 3"
 
 [node name="Label4" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2147155882]
 layout_mode = 2
-text = "Para ser  ser direto de uma construtora, é necessario ter curso superior"
+text = "afirmativas"
 
 [node name="Label5" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1570702889]
 layout_mode = 2
-text = "Ana não é a mais velha"
+text = "2"
 
 [node name="Label6" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2011335287]
 layout_mode = 2
