@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ckj0u3mnmjy55"]
 
+[ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="1_joi4n"]
 [ext_resource type="Script" uid="uid://chi3bsdnsjipy" path="res://scripts/container_1.gd" id="1_yhwmj"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_joi4n"]
 [ext_resource type="Texture2D" uid="uid://bcxnt3rig1eel" path="res://assets/Sprite_btn.png" id="3_e656q"]
@@ -49,6 +50,14 @@ grow_vertical = 2
 self_modulate = Color(0.047058824, 0.047058824, 0.047058824, 1)
 layout_mode = 2
 texture = SubResource("CanvasTexture_8uhyo")
+
+[node name="legenda" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=318292728]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 52.0
+offset_right = 1143.0
+offset_bottom = 224.0
+texture = ExtResource("1_joi4n")
 
 [node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/TextureRect" unique_id=1742512627]
 layout_mode = 0
@@ -426,6 +435,23 @@ layout_mode = 2
 text = "Enviar
 "
 script = ExtResource("11_dq6ul")
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" unique_id=78962708]
+visible = false
+self_modulate = Color(0.7942104, 0, 0.020539124, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.5
+offset_top = -53.5
+offset_right = 28.5
+offset_bottom = -30.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "aaaaaaa"
 
 [node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=1886120153]
 self_modulate = Color(0.2, 0.2, 0.2, 1)

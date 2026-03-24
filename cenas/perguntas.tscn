@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://byw5mgct7n2y7" path="res://scripts/container_4.gd" id="8_g27ox"]
 [ext_resource type="Script" uid="uid://0yeegnqo7xqf" path="res://scripts/container_5.gd" id="9_h5foq"]
 [ext_resource type="Script" uid="uid://j3fvadqhtih7" path="res://scripts/btn_enviar_1.gd" id="10_g27ox"]
+[ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_iv323"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_fg1l6"]
 
@@ -427,6 +428,23 @@ text = "Enviar
 "
 script = ExtResource("10_g27ox")
 
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" unique_id=235057700]
+visible = false
+self_modulate = Color(0.7942104, 0, 0.020539124, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.5
+offset_top = -53.5
+offset_right = 28.5
+offset_bottom = -30.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "aaaaaaa"
+
 [node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=897924008]
 self_modulate = Color(0.2, 0.2, 0.2, 1)
 layout_mode = 0
@@ -485,6 +503,14 @@ offset_top = -14.0
 offset_right = 18.0
 offset_bottom = 22.0
 script = ExtResource("6_l6gqu")
+
+[node name="legenda" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=1968663127]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 52.0
+offset_right = 1143.0
+offset_bottom = 224.0
+texture = ExtResource("13_iv323")
 
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_ana_pressed"]
