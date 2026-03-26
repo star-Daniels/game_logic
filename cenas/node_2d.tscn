@@ -1008,7 +1008,7 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ikvx"]
-size = Vector2(30, 21)
+size = Vector2(22, 21)
 
 [node name="initial_world" type="Node2D" unique_id=1774563267]
 
