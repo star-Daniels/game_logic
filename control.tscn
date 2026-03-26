@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bkh1sjao1ptuv" path="res://container_13.gd" id="1_eh0v1"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_g31lc"]
-[ext_resource type="Texture2D" uid="uid://bcxnt3rig1eel" path="res://assets/Sprite_btn.png" id="3_knq72"]
+[ext_resource type="Texture2D" uid="uid://cugycinw1bqvq" path="res://assets/Sprite-bnt..-sheet.png" id="3_pxugv"]
 [ext_resource type="Texture2D" uid="uid://bal7s77y14y37" path="res://assets/Ana.png" id="4_xvdhi"]
 [ext_resource type="Texture2D" uid="uid://dp8or4is11kna" path="res://assets/Clara.png" id="5_oq4si"]
 [ext_resource type="Script" uid="uid://bqo16jujouh0c" path="res://container_2.gd" id="6_eh0v1"]
@@ -11,7 +11,6 @@
 [ext_resource type="Script" uid="uid://cwgisfb2b0qxo" path="res://container_5.gd" id="9_knq72"]
 [ext_resource type="Script" uid="uid://j3fvadqhtih7" path="res://scripts/btn_enviar_1.gd" id="11_8jbwv"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_v61lp"]
-[ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_dgp6r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_fg1l6"]
 
@@ -121,7 +120,7 @@ offset_top = -33.0
 offset_right = 277.0
 offset_bottom = -62.004005
 grow_vertical = 2
-texture = ExtResource("3_knq72")
+texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=855632308]
@@ -175,7 +174,7 @@ offset_top = -24.0
 offset_right = 160.20003
 offset_bottom = -53.004005
 grow_vertical = 2
-texture = ExtResource("3_knq72")
+texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1516361880]
@@ -229,7 +228,7 @@ offset_top = -17.0
 offset_right = 190.00002
 offset_bottom = -49.004005
 grow_vertical = 2
-texture = ExtResource("3_knq72")
+texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=1881958095]
@@ -283,7 +282,7 @@ offset_top = -13.0
 offset_right = 153.00002
 offset_bottom = -40.004005
 grow_vertical = 2
-texture = ExtResource("3_knq72")
+texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=688381940]
@@ -337,7 +336,7 @@ offset_top = -3.0
 offset_right = 235.00002
 offset_bottom = -33.004005
 grow_vertical = 2
-texture = ExtResource("3_knq72")
+texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=1788999610]
@@ -440,14 +439,6 @@ offset_top = -14.0
 offset_right = 18.0
 offset_bottom = 22.0
 script = ExtResource("12_v61lp")
-
-[node name="legenda" type="TextureRect" parent="MarginContainer/TextureRect" unique_id=2006107722]
-layout_mode = 0
-offset_left = 992.0
-offset_top = 52.0
-offset_right = 1143.0
-offset_bottom = 224.0
-texture = ExtResource("13_dgp6r")
 
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
