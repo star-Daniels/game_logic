@@ -10,7 +10,7 @@ func _on_pressed() -> void:
 	var correta5 = $"../container_5"
 	if (correta1.correta1 and correta2.correta2 and correta3.correta3 and correta4.correta4 and correta5.correta5) == true:
 		print("tudo certo parceiro")
-		get_tree().change_scene_to_file("res://cenas/node_2d.tscn")
+		get_tree().change_scene_to_file("res://cenas/win.tscn")
 	
 	if (correta1.correta1 and correta2.correta2 and correta3.correta3 and correta4.correta4 and correta5.correta5) == false:
 		print("Errou pae")
