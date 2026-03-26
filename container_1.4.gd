@@ -5,7 +5,7 @@ var correta1
 @onready var preview = $HBoxContainer/TextureRect
 
 func _on_btn_beto_pressed() -> void:
-	preview.texture = panel.get_node("fundo/btn_beto").texture_normal
+	preview.texture = panel.get_node("fundo/btn_false").texture_normal
 	panel.visible = false
 	correta1 = false
 

@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://d33q7najttpkm"]
 
-[ext_resource type="Script" uid="uid://bkh1sjao1ptuv" path="res://container_13.gd" id="1_eh0v1"]
+[ext_resource type="Script" uid="uid://dwbqsfflonmql" path="res://container_16.gd" id="1_pxugv"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_g31lc"]
-[ext_resource type="Texture2D" uid="uid://cugycinw1bqvq" path="res://assets/Sprite-bnt..-sheet.png" id="3_pxugv"]
-[ext_resource type="Texture2D" uid="uid://bal7s77y14y37" path="res://assets/Ana.png" id="4_xvdhi"]
-[ext_resource type="Texture2D" uid="uid://dp8or4is11kna" path="res://assets/Clara.png" id="5_oq4si"]
-[ext_resource type="Script" uid="uid://bqo16jujouh0c" path="res://container_2.gd" id="6_eh0v1"]
-[ext_resource type="Script" uid="uid://bmpqyaff36bho" path="res://container_3.gd" id="7_am1vj"]
-[ext_resource type="Script" uid="uid://cbs1ak6ws1c53" path="res://container_4.gd" id="8_g31lc"]
-[ext_resource type="Script" uid="uid://cwgisfb2b0qxo" path="res://container_5.gd" id="9_knq72"]
+[ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="4_pxugv"]
+[ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="5_eh0v1"]
+[ext_resource type="Script" uid="uid://ctva7ubeqngdw" path="res://container_26.gd" id="6_pxugv"]
+[ext_resource type="Script" uid="uid://bex57d3osuxfg" path="res://container_30.gd" id="7_pxugv"]
+[ext_resource type="Script" uid="uid://b16i1lftgy0hu" path="res://container_40.gd" id="8_eh0v1"]
+[ext_resource type="Script" uid="uid://dv45840yp7605" path="res://container_50.gd" id="9_pxugv"]
 [ext_resource type="Script" uid="uid://j3fvadqhtih7" path="res://scripts/btn_enviar_1.gd" id="11_8jbwv"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_v61lp"]
 
@@ -89,7 +88,7 @@ layout_mode = 2
 
 [node name="container_1" type="MarginContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=957323915]
 layout_mode = 2
-script = ExtResource("1_eh0v1")
+script = ExtResource("1_pxugv")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" unique_id=127584010]
 layout_mode = 2
@@ -120,7 +119,6 @@ offset_top = -33.0
 offset_right = 277.0
 offset_bottom = -62.004005
 grow_vertical = 2
-texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=855632308]
@@ -129,7 +127,7 @@ offset_left = 76.0
 offset_top = 5.0
 offset_right = 113.0
 offset_bottom = 47.0
-texture_normal = ExtResource("4_xvdhi")
+texture_normal = ExtResource("4_pxugv")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1737104891]
@@ -138,12 +136,12 @@ offset_left = 6.0
 offset_top = 3.0
 offset_right = 46.0
 offset_bottom = 44.0
-texture_normal = ExtResource("5_oq4si")
+texture_normal = ExtResource("5_eh0v1")
 stretch_mode = 6
 
 [node name="container_2" type="MarginContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1830471957]
 layout_mode = 2
-script = ExtResource("6_eh0v1")
+script = ExtResource("6_pxugv")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" unique_id=1363830666]
 layout_mode = 2
@@ -174,7 +172,6 @@ offset_top = -24.0
 offset_right = 160.20003
 offset_bottom = -53.004005
 grow_vertical = 2
-texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1516361880]
@@ -183,7 +180,7 @@ offset_left = 73.20001
 offset_top = 6.0
 offset_right = 113.20001
 offset_bottom = 46.0
-texture_normal = ExtResource("4_xvdhi")
+texture_normal = ExtResource("4_pxugv")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=847425623]
@@ -192,12 +189,12 @@ offset_left = 3.2000122
 offset_top = 4.0
 offset_right = 47.200012
 offset_bottom = 44.0
-texture_normal = ExtResource("5_oq4si")
+texture_normal = ExtResource("5_eh0v1")
 stretch_mode = 6
 
 [node name="container_3" type="MarginContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=834676106]
 layout_mode = 2
-script = ExtResource("7_am1vj")
+script = ExtResource("7_pxugv")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" unique_id=1997225605]
 layout_mode = 2
@@ -228,7 +225,6 @@ offset_top = -17.0
 offset_right = 190.00002
 offset_bottom = -49.004005
 grow_vertical = 2
-texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=1881958095]
@@ -237,7 +233,7 @@ offset_left = 75.0
 offset_top = 4.0
 offset_right = 115.0
 offset_bottom = 44.0
-texture_normal = ExtResource("4_xvdhi")
+texture_normal = ExtResource("4_pxugv")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=1050753581]
@@ -246,12 +242,12 @@ offset_left = 5.0
 offset_top = 3.0
 offset_right = 47.0
 offset_bottom = 40.0
-texture_normal = ExtResource("5_oq4si")
+texture_normal = ExtResource("5_eh0v1")
 stretch_mode = 6
 
 [node name="container_4" type="MarginContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1388294494]
 layout_mode = 2
-script = ExtResource("8_g31lc")
+script = ExtResource("8_eh0v1")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" unique_id=148394973]
 layout_mode = 2
@@ -282,7 +278,6 @@ offset_top = -13.0
 offset_right = 153.00002
 offset_bottom = -40.004005
 grow_vertical = 2
-texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=688381940]
@@ -291,7 +286,7 @@ offset_left = 76.0
 offset_top = 6.0
 offset_right = 116.0
 offset_bottom = 46.0
-texture_normal = ExtResource("4_xvdhi")
+texture_normal = ExtResource("4_pxugv")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=603328559]
@@ -300,12 +295,12 @@ offset_left = 4.0
 offset_top = 5.0
 offset_right = 48.0
 offset_bottom = 45.0
-texture_normal = ExtResource("5_oq4si")
+texture_normal = ExtResource("5_eh0v1")
 stretch_mode = 6
 
 [node name="container_5" type="MarginContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=285485355]
 layout_mode = 2
-script = ExtResource("9_knq72")
+script = ExtResource("9_pxugv")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" unique_id=450095355]
 layout_mode = 2
@@ -336,7 +331,6 @@ offset_top = -3.0
 offset_right = 235.00002
 offset_bottom = -33.004005
 grow_vertical = 2
-texture = ExtResource("3_pxugv")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=1788999610]
@@ -345,7 +339,7 @@ offset_left = 76.0
 offset_top = 5.0
 offset_right = 116.0
 offset_bottom = 45.0
-texture_normal = ExtResource("4_xvdhi")
+texture_normal = ExtResource("4_pxugv")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo" unique_id=566875781]
@@ -354,7 +348,7 @@ offset_left = 5.0
 offset_top = 2.0
 offset_right = 49.0
 offset_bottom = 42.0
-texture_normal = ExtResource("5_oq4si")
+texture_normal = ExtResource("5_eh0v1")
 stretch_mode = 6
 
 [node name="btn_enviar_1" type="Button" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=672936798]
