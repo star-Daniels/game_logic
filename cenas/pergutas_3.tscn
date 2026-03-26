@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://bal7s77y14y37" path="res://assets/Ana.png" id="4_swvdl"]
 [ext_resource type="Texture2D" uid="uid://dp8or4is11kna" path="res://assets/Clara.png" id="5_8oopb"]
 [ext_resource type="Texture2D" uid="uid://c3l0rob4phxeu" path="res://assets/Beto.png" id="6_klwgk"]
-[ext_resource type="Script" uid="uid://cq5cs7vwn5qr6" path="res://scripts/container_2.gd" id="7_p6tx1"]
 [ext_resource type="Script" uid="uid://fq0otd8gb1td" path="res://scripts/container_3.gd" id="8_j2tun"]
+[ext_resource type="Script" uid="uid://ce3ywsplpuu75" path="res://scripts/container_2.3.gd" id="8_joi4n"]
 [ext_resource type="Script" uid="uid://byw5mgct7n2y7" path="res://scripts/container_4.gd" id="9_rx5gh"]
 [ext_resource type="Script" uid="uid://38pom75d5uvm" path="res://scripts/container_5.2.gd" id="10_8gscv"]
 [ext_resource type="Script" uid="uid://jpwg3igljc4e" path="res://scripts/btn_enviar_2.gd" id="11_dq6ul"]
@@ -80,35 +80,23 @@ text = "Beto é mais velho que a programadora do fatorial"
 
 [node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=112023202]
 layout_mode = 2
-text = "tenho que continuar"
+text = "Cinco pessoas, representadas por A, B, C D e E, sentam-se em volta de uma mesa circular"
 
 [node name="Label3" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1997424652]
 layout_mode = 2
-text = "parte 3"
+text = "B não  é vizinho  de A"
 
 [node name="Label4" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2147155882]
 layout_mode = 2
-text = "afirmativas"
+text = "D é o vizinho à esquerda de C"
 
 [node name="Label5" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1570702889]
 layout_mode = 2
-text = "2"
-
-[node name="Label6" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2011335287]
-layout_mode = 2
-text = "O(A) estagiário(a), primo(a) de carla, é o(a) mais velho(a)"
-
-[node name="Label7" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=655117038]
-layout_mode = 2
-text = "Ana já visitou, com seus colegas a construtora que carla dirige"
-
-[node name="Label8" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1854708186]
-layout_mode = 2
-text = "Nomes: Beto Ana Carla"
+text = "B e C não são vizinhos"
 
 [node name="Label9" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1248678644]
 layout_mode = 2
-text = "Idades: 18 26 29"
+text = "Assim, é correto concluir que:"
 
 [node name="VSeparator5" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=486658687]
 self_modulate = Color(0, 0, 0, 1)
@@ -136,7 +124,6 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1946479815]
-visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=1110554181]
@@ -152,11 +139,14 @@ texture = ExtResource("3_e656q")
 expand_mode = 1
 
 [node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=866116048]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.94200003
+anchor_bottom = 0.97900003
 offset_left = 76.0
 offset_top = 5.0
-offset_right = 113.0
-offset_bottom = 47.0
+offset_right = -0.040000916
+offset_bottom = 0.00799942
 texture_normal = ExtResource("4_swvdl")
 stretch_mode = 6
 
@@ -180,7 +170,7 @@ stretch_mode = 6
 
 [node name="container_2" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=822364098]
 layout_mode = 2
-script = ExtResource("7_p6tx1")
+script = ExtResource("8_joi4n")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" unique_id=614264268]
 layout_mode = 2

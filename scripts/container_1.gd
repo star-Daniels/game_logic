@@ -19,3 +19,4 @@ func _on_btn_ana_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_ana").texture_normal
 	panel.visible = false
 	correta1 = false
+
