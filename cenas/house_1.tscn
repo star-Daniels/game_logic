@@ -1594,7 +1594,7 @@ offset_bottom = 107.0
 theme_override_font_sizes/font_size = 17
 
 [node name="player" parent="." unique_id=361126147 instance=ExtResource("2_arl4x")]
-position = Vector2(121, -43)
+position = Vector2(20, -10)
 
 [node name="paredes" type="Area2D" parent="." unique_id=51696394]
 visible = false

@@ -7,16 +7,13 @@ var correta1
 func _on_btn_beto_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_beto").texture_normal
 	panel.visible = false
-	correta1 = true
+	correta1 = false
 
 
 func _on_btn_ana_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_ana").texture_normal
 	panel.visible = false
-	correta1 = false
-
-
-
+	correta1 = true
 
 func _on_btn_carla_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_carla").texture_normal
