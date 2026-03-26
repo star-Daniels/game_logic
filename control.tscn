@@ -1,14 +1,14 @@
-[gd_scene format=3 uid="uid://b3g4anqkwljuu"]
+[gd_scene format=3 uid="uid://dchspuaps6qo0"]
 
-[ext_resource type="Script" uid="uid://dwbqsfflonmql" path="res://container_16.gd" id="1_pxugv"]
+[ext_resource type="Script" path="res://container_16.gd" id="1_pxugv"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_g31lc"]
 [ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="4_pxugv"]
 [ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="5_eh0v1"]
-[ext_resource type="Script" uid="uid://ctva7ubeqngdw" path="res://container_26.gd" id="6_pxugv"]
-[ext_resource type="Script" uid="uid://bex57d3osuxfg" path="res://container_30.gd" id="7_pxugv"]
-[ext_resource type="Script" uid="uid://b16i1lftgy0hu" path="res://container_40.gd" id="8_eh0v1"]
-[ext_resource type="Script" uid="uid://dv45840yp7605" path="res://container_50.gd" id="9_pxugv"]
-[ext_resource type="Script" uid="uid://j3fvadqhtih7" path="res://scripts/btn_enviar_1.gd" id="11_8jbwv"]
+[ext_resource type="Script" path="res://container_26.gd" id="6_pxugv"]
+[ext_resource type="Script" path="res://container_30.gd" id="7_pxugv"]
+[ext_resource type="Script" path="res://container_40.gd" id="8_eh0v1"]
+[ext_resource type="Script" uid="uid://bh4dd4ivp7ttl" path="res://scripts/btn_enviar_1.c.gd" id="9_0ytqx"]
+[ext_resource type="Script" path="res://container_50.gd" id="9_pxugv"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_v61lp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_fg1l6"]
@@ -355,7 +355,7 @@ stretch_mode = 6
 layout_mode = 2
 text = "Enviar
 "
-script = ExtResource("11_8jbwv")
+script = ExtResource("9_0ytqx")
 
 [node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" unique_id=1325650126]
 visible = false

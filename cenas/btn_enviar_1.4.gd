@@ -10,7 +10,7 @@ func _on_pressed() -> void:
 	
 	if (correta1.correta1 and correta2.correta2 and correta3.correta3 and correta4.correta4) == true:
 		print("tudo certo parceiro")
-		get_tree().change_scene_to_file("res://cenas/node_2d.tscn")
+		get_tree().change_scene_to_file("res://control.tscn")
 	
 	if (correta1.correta1 and correta2.correta2 and correta3.correta3 and correta4.correta4) == false:
 		print("Errou pae")
