@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d33q7najttpkm"]
+[gd_scene format=3 uid="uid://b3g4anqkwljuu"]
 
 [ext_resource type="Script" uid="uid://dwbqsfflonmql" path="res://container_16.gd" id="1_pxugv"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_g31lc"]
@@ -434,21 +434,24 @@ offset_right = 18.0
 offset_bottom = 22.0
 script = ExtResource("12_v61lp")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1989584252]
+position = Vector2(547, 288)
+
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Button" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_true" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5/HBoxContainer/Panel/fundo/btn_false" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_5" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" to="MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" method="_on_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" to="MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" method="_on_pressed"]
 [connection signal="pressed" from="MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" to="MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" method="_on_pressed"]
