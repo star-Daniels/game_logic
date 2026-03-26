@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://byw5mgct7n2y7" path="res://scripts/container_4.gd" id="8_dapo8"]
 [ext_resource type="Script" uid="uid://38pom75d5uvm" path="res://scripts/container_5.2.gd" id="10_81cxf"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="11_eghgt"]
-[ext_resource type="Script" uid="uid://jpwg3igljc4e" path="res://scripts/btn_enviar_2.gd" id="11_wp1w5"]
+[ext_resource type="Script" uid="uid://ejr6iigv0swe" path="res://scripts/btn_enviar_1.2.gd" id="11_wp1w5"]
 [ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_wp1w5"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_81cxf"]

@@ -1,0 +1,399 @@
+[gd_scene format=3 uid="uid://c2xrg35y0ocjt"]
+
+[ext_resource type="Script" uid="uid://ca07m0h0lx0x0" path="res://scripts/container_1.4.gd" id="1_nt0ep"]
+[ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_m26cb"]
+[ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="3_m26cb"]
+[ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="4_8ofnq"]
+[ext_resource type="Script" uid="uid://c4w6srujr5fuo" path="res://cenas/container_2.4.gd" id="6_1aat4"]
+[ext_resource type="Script" uid="uid://bab40y11d7jx2" path="res://cenas/container_3.4.gd" id="7_m26cb"]
+[ext_resource type="Script" uid="uid://cu045xbgoo5cx" path="res://cenas/btn_enviar_1.4.gd" id="8_oae58"]
+[ext_resource type="Script" uid="uid://sfmjh46g5wyk" path="res://cenas/container_4.4.gd" id="9_nt0ep"]
+[ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_3resb"]
+[ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_mp8f5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dp2ah"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r5dmb"]
+blend_mode = 1
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_mn1if"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ljjig"]
+
+[node name="pergunta4" type="Node2D" unique_id=1200056079]
+
+[node name="Control" type="Control" parent="." unique_id=1236477664]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 30.0
+offset_top = 1.0
+offset_right = 102.0
+offset_bottom = 207.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1754122774]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.40300003
+anchor_right = 15.625001
+anchor_bottom = 3.15
+offset_left = 0.016002655
+offset_top = -1.0
+offset_right = -0.00012207031
+offset_bottom = 0.099975586
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer" unique_id=1773070094]
+self_modulate = Color(0.047058824, 0.047058824, 0.047058824, 1)
+layout_mode = 2
+texture = SubResource("CanvasTexture_dp2ah")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/TextureRect" unique_id=1254313542]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1154.0
+offset_bottom = 646.0
+theme_override_constants/margin_left = 11
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 11
+theme_override_constants/margin_bottom = 11
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer" unique_id=793467226]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=470307672]
+layout_mode = 2
+text = "Beto é mais velho que a programadora do fatorial"
+
+[node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=117208495]
+layout_mode = 2
+text = "Ou luciana é cozinheira ou Walter é educador."
+
+[node name="Label3" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1608297022]
+layout_mode = 2
+text = "Luciana é cozinheira se e somente se Walter é educador"
+
+[node name="Label4" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1577354266]
+layout_mode = 2
+text = "
+Em linguagem lógica, podemos escrever as sentenças acima respectivamente como:"
+
+[node name="VSeparator5" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=969158511]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="container_1" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1249164475]
+layout_mode = 2
+script = ExtResource("1_nt0ep")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" unique_id=277915353]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1327601721]
+layout_mode = 2
+text = "A: p ˅ q e p ˄ q "
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1183168361]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("2_m26cb")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=386804732]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1139637315]
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=792469541]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 157.0
+offset_top = -33.0
+offset_right = 277.0
+offset_bottom = -62.004005
+grow_vertical = 2
+expand_mode = 1
+
+[node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1520121107]
+layout_mode = 0
+offset_left = -157.0
+offset_top = 27.0
+offset_right = -120.0
+offset_bottom = 69.0
+texture_normal = ExtResource("3_m26cb")
+stretch_mode = 6
+
+[node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1922118264]
+layout_mode = 0
+offset_left = -122.0
+offset_top = 27.0
+offset_right = -82.0
+offset_bottom = 68.0
+texture_normal = ExtResource("4_8ofnq")
+stretch_mode = 6
+
+[node name="container_2" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2054776008]
+layout_mode = 2
+script = ExtResource("6_1aat4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" unique_id=1663732755]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=1270181711]
+layout_mode = 2
+text = "B: p ˄ q e p → q"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=1987056688]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("2_m26cb")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=851432398]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=550740369]
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel" unique_id=1323610779]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 40.000015
+offset_top = -24.0
+offset_right = 160.20003
+offset_bottom = -53.004005
+grow_vertical = 2
+expand_mode = 1
+
+[node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=543846707]
+layout_mode = 0
+offset_left = -44.0
+offset_top = 17.0
+offset_right = -4.0
+offset_bottom = 57.0
+texture_normal = ExtResource("3_m26cb")
+stretch_mode = 6
+
+[node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1038837778]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 59.0
+texture_normal = ExtResource("4_8ofnq")
+stretch_mode = 6
+
+[node name="container_3" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1563998007]
+layout_mode = 2
+script = ExtResource("7_m26cb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" unique_id=215698174]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=1390295607]
+layout_mode = 2
+text = "C: p ˅ q e p ↔ q"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=505135648]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("2_m26cb")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=249584866]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=2128152360]
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel" unique_id=2059748744]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 69.000015
+offset_top = -17.0
+offset_right = 190.00002
+offset_bottom = -49.004005
+grow_vertical = 2
+expand_mode = 1
+
+[node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=709449684]
+layout_mode = 0
+offset_left = -71.0
+offset_top = 10.0
+offset_right = -31.0
+offset_bottom = 50.0
+texture_normal = ExtResource("3_m26cb")
+stretch_mode = 6
+
+[node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=354655422]
+layout_mode = 0
+offset_left = -36.0
+offset_top = 11.0
+offset_right = 6.0
+offset_bottom = 48.0
+texture_normal = ExtResource("4_8ofnq")
+stretch_mode = 6
+
+[node name="container_4" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=665861640]
+layout_mode = 2
+script = ExtResource("9_nt0ep")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" unique_id=1472596777]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=1065869185]
+layout_mode = 2
+text = "D: p ↔ q e p ˅ q"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=1003406711]
+layout_mode = 2
+text = "abrir/fechar"
+script = ExtResource("2_m26cb")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=1578309034]
+layout_mode = 2
+expand_mode = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=38011245]
+layout_mode = 2
+
+[node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel" unique_id=1257793269]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 2.4840002
+offset_left = 30.000015
+offset_top = -13.0
+offset_right = 153.00002
+offset_bottom = -40.004005
+grow_vertical = 2
+expand_mode = 1
+
+[node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=144880798]
+layout_mode = 0
+offset_left = -35.0
+offset_top = 2.0
+offset_right = 5.0
+offset_bottom = 42.0
+texture_normal = ExtResource("3_m26cb")
+stretch_mode = 6
+
+[node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=752109204]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 44.0
+offset_bottom = 43.0
+texture_normal = ExtResource("4_8ofnq")
+stretch_mode = 6
+
+[node name="btn_enviar_1" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1629768686]
+layout_mode = 2
+text = "Enviar
+"
+script = ExtResource("8_oae58")
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" unique_id=436623607]
+visible = false
+self_modulate = Color(0.7942104, 0, 0.020539124, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.5
+offset_top = -53.5
+offset_right = 28.5
+offset_bottom = -30.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "aaaaaaa"
+
+[node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=128283455]
+self_modulate = Color(0.2, 0.2, 0.2, 1)
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 38.0
+texture = SubResource("CanvasTexture_mn1if")
+
+[node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2" unique_id=88139176]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 8.0
+offset_right = 1156.0
+offset_bottom = 39.0
+text = "X"
+
+[node name="btn_voltar" type="TextureButton" parent="Control/MarginContainer/TextureRect/TextureRect2/Label2" unique_id=1445327059]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -5.0
+offset_right = 27.0
+offset_bottom = 31.0
+script = ExtResource("12_3resb")
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/TextureRect/TextureRect2" unique_id=1741517591]
+self_modulate = Color(0.047058824, 0.047058824, 0.047058824, 1)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 46.0
+texture = SubResource("CanvasTexture_ljjig")
+
+[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect" unique_id=982773552]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 176.0
+offset_bottom = 30.0
+theme_override_constants/line_spacing = 5
+theme_override_font_sizes/font_size = 13
+text = "Prompt de comando"
+
+[node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect" unique_id=904830775]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 9.0
+offset_right = 241.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 13
+text = "X"
+
+[node name="btn_voltar" type="TextureButton" parent="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2" unique_id=1076307405]
+layout_mode = 0
+offset_left = -22.0
+offset_top = -14.0
+offset_right = 18.0
+offset_bottom = 22.0
+script = ExtResource("12_3resb")
+
+[node name="legenda" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=1222492567]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 52.0
+offset_right = 1143.0
+offset_bottom = 224.0
+texture = ExtResource("13_mp8f5")
+
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" to="Control/MarginContainer/TextureRect/TextureRect2/Label2/btn_voltar" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" to="Control/MarginContainer/TextureRect/TextureRect2/TextureRect/Label2/btn_voltar" method="_on_pressed"]
