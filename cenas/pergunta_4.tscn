@@ -2,14 +2,12 @@
 
 [ext_resource type="Script" uid="uid://ca07m0h0lx0x0" path="res://scripts/container_1.4.gd" id="1_nt0ep"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_m26cb"]
-[ext_resource type="Texture2D" uid="uid://bcxnt3rig1eel" path="res://assets/Sprite_btn.png" id="3_8ofnq"]
-[ext_resource type="Texture2D" uid="uid://bal7s77y14y37" path="res://assets/Ana.png" id="4_nxj3q"]
-[ext_resource type="Texture2D" uid="uid://dp8or4is11kna" path="res://assets/Clara.png" id="5_g5lpa"]
+[ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="3_m26cb"]
+[ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="4_8ofnq"]
 [ext_resource type="Script" uid="uid://c4w6srujr5fuo" path="res://cenas/container_2.4.gd" id="6_1aat4"]
-[ext_resource type="Texture2D" uid="uid://c3l0rob4phxeu" path="res://assets/Beto.png" id="6_gbemt"]
 [ext_resource type="Script" uid="uid://bab40y11d7jx2" path="res://cenas/container_3.4.gd" id="7_m26cb"]
+[ext_resource type="Script" uid="uid://cu045xbgoo5cx" path="res://cenas/btn_enviar_1.4.gd" id="8_oae58"]
 [ext_resource type="Script" uid="uid://sfmjh46g5wyk" path="res://cenas/container_4.4.gd" id="9_nt0ep"]
-[ext_resource type="Script" uid="uid://jpwg3igljc4e" path="res://scripts/btn_enviar_2.gd" id="11_t4214"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_3resb"]
 [ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_mp8f5"]
 
@@ -108,7 +106,6 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1139637315]
-visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=792469541]
@@ -120,25 +117,24 @@ offset_top = -33.0
 offset_right = 277.0
 offset_bottom = -62.004005
 grow_vertical = 2
-texture = ExtResource("3_8ofnq")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1520121107]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 5.0
-offset_right = 113.0
-offset_bottom = 47.0
-texture_normal = ExtResource("4_nxj3q")
+offset_left = -157.0
+offset_top = 27.0
+offset_right = -120.0
+offset_bottom = 69.0
+texture_normal = ExtResource("3_m26cb")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo" unique_id=1922118264]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 3.0
-offset_right = 46.0
-offset_bottom = 44.0
-texture_normal = ExtResource("5_g5lpa")
+offset_left = -122.0
+offset_top = 27.0
+offset_right = -82.0
+offset_bottom = 68.0
+texture_normal = ExtResource("4_8ofnq")
 stretch_mode = 6
 
 [node name="container_2" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=2054776008]
@@ -162,7 +158,6 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=550740369]
-visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel" unique_id=1323610779]
@@ -174,25 +169,24 @@ offset_top = -24.0
 offset_right = 160.20003
 offset_bottom = -53.004005
 grow_vertical = 2
-texture = ExtResource("3_8ofnq")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=543846707]
 layout_mode = 0
-offset_left = 73.20001
-offset_top = 6.0
-offset_right = 113.20001
-offset_bottom = 46.0
-texture_normal = ExtResource("4_nxj3q")
+offset_left = -44.0
+offset_top = 17.0
+offset_right = -4.0
+offset_bottom = 57.0
+texture_normal = ExtResource("3_m26cb")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo" unique_id=1038837778]
 layout_mode = 0
-offset_left = 3.2000122
-offset_top = 4.0
-offset_right = 47.200012
-offset_bottom = 44.0
-texture_normal = ExtResource("5_g5lpa")
+offset_left = -10.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 59.0
+texture_normal = ExtResource("4_8ofnq")
 stretch_mode = 6
 
 [node name="container_3" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1563998007]
@@ -216,7 +210,6 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=2128152360]
-visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel" unique_id=2059748744]
@@ -228,34 +221,24 @@ offset_top = -17.0
 offset_right = 190.00002
 offset_bottom = -49.004005
 grow_vertical = 2
-texture = ExtResource("3_8ofnq")
 expand_mode = 1
 
-[node name="btn_ana" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=709449684]
+[node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=709449684]
 layout_mode = 0
-offset_left = 75.0
-offset_top = 4.0
-offset_right = 115.0
-offset_bottom = 44.0
-texture_normal = ExtResource("4_nxj3q")
+offset_left = -71.0
+offset_top = 10.0
+offset_right = -31.0
+offset_bottom = 50.0
+texture_normal = ExtResource("3_m26cb")
 stretch_mode = 6
 
-[node name="btn_carla" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=354655422]
+[node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=354655422]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 3.0
-offset_right = 47.0
-offset_bottom = 40.0
-texture_normal = ExtResource("5_g5lpa")
-stretch_mode = 6
-
-[node name="btn_beto" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo" unique_id=1998400959]
-layout_mode = 0
-offset_left = 40.0
-offset_top = 4.0
-offset_right = 80.0
-offset_bottom = 43.0
-texture_normal = ExtResource("6_gbemt")
+offset_left = -36.0
+offset_top = 11.0
+offset_right = 6.0
+offset_bottom = 48.0
+texture_normal = ExtResource("4_8ofnq")
 stretch_mode = 6
 
 [node name="container_4" type="MarginContainer" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=665861640]
@@ -279,7 +262,6 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=38011245]
-visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel" unique_id=1257793269]
@@ -291,32 +273,30 @@ offset_top = -13.0
 offset_right = 153.00002
 offset_bottom = -40.004005
 grow_vertical = 2
-texture = ExtResource("3_8ofnq")
 expand_mode = 1
 
 [node name="btn_true" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=144880798]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 6.0
-offset_right = 116.0
-offset_bottom = 46.0
-texture_normal = ExtResource("4_nxj3q")
+offset_left = -35.0
+offset_top = 2.0
+offset_right = 5.0
+offset_bottom = 42.0
+texture_normal = ExtResource("3_m26cb")
 stretch_mode = 6
 
 [node name="btn_false" type="TextureButton" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo" unique_id=752109204]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 5.0
-offset_right = 48.0
-offset_bottom = 45.0
-texture_normal = ExtResource("5_g5lpa")
+offset_top = 3.0
+offset_right = 44.0
+offset_bottom = 43.0
+texture_normal = ExtResource("4_8ofnq")
 stretch_mode = 6
 
 [node name="btn_enviar_1" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1629768686]
 layout_mode = 2
 text = "Enviar
 "
-script = ExtResource("11_t4214")
+script = ExtResource("8_oae58")
 
 [node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/btn_enviar_1" unique_id=436623607]
 visible = false
@@ -406,12 +386,11 @@ texture = ExtResource("13_mp8f5")
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_false_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_true_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2" method="_on_btn_false_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_ana" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_ana_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_carla" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_carla_pressed"]
-[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_beto" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_beto_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_ana_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel/fundo/btn_false" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3" method="_on_btn_carla_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4" method="_on_btn_ana_pressed"]
