@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://c2xrg35y0ocjt"]
+[gd_scene format=3 uid="uid://enyy376pnq5v"]
 
-[ext_resource type="Script" uid="uid://ca07m0h0lx0x0" path="res://scripts/container_1.4.gd" id="1_nt0ep"]
+[ext_resource type="Script" path="res://scripts/container_1.4.gd" id="1_nt0ep"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_m26cb"]
 [ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="3_m26cb"]
 [ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="4_8ofnq"]
@@ -9,7 +9,6 @@
 [ext_resource type="Script" uid="uid://cu045xbgoo5cx" path="res://cenas/btn_enviar_1.4.gd" id="8_oae58"]
 [ext_resource type="Script" uid="uid://sfmjh46g5wyk" path="res://cenas/container_4.4.gd" id="9_nt0ep"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_3resb"]
-[ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_mp8f5"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_dp2ah"]
 
@@ -61,6 +60,7 @@ theme_override_constants/margin_bottom = 11
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/TextureRect/MarginContainer" unique_id=793467226]
 self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
+size_flags_vertical = 4
 theme_override_constants/separation = 15
 
 [node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=470307672]
@@ -106,6 +106,7 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer" unique_id=1139637315]
+visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel" unique_id=792469541]
@@ -158,6 +159,7 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer" unique_id=550740369]
+visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_2/HBoxContainer/Panel" unique_id=1323610779]
@@ -210,6 +212,7 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer" unique_id=2128152360]
+visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_3/HBoxContainer/Panel" unique_id=2059748744]
@@ -262,6 +265,7 @@ layout_mode = 2
 expand_mode = 2
 
 [node name="Panel" type="Panel" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer" unique_id=38011245]
+visible = false
 layout_mode = 2
 
 [node name="fundo" type="TextureRect" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_4/HBoxContainer/Panel" unique_id=1257793269]
@@ -291,6 +295,36 @@ offset_right = 44.0
 offset_bottom = 43.0
 texture_normal = ExtResource("4_8ofnq")
 stretch_mode = 6
+
+[node name="VSeparator6" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1196259544]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="VSeparator8" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1766828773]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="VSeparator12" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1082395662]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="VSeparator13" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=706322884]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="VSeparator14" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1074113010]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
+
+[node name="VSeparator15" type="VSeparator" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=190845616]
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_r5dmb")
+layout_mode = 2
 
 [node name="btn_enviar_1" type="Button" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1629768686]
 layout_mode = 2
@@ -373,14 +407,6 @@ offset_top = -14.0
 offset_right = 18.0
 offset_bottom = 22.0
 script = ExtResource("12_3resb")
-
-[node name="legenda" type="TextureRect" parent="Control/MarginContainer/TextureRect" unique_id=1222492567]
-layout_mode = 0
-offset_left = 992.0
-offset_top = 52.0
-offset_right = 1143.0
-offset_bottom = 224.0
-texture = ExtResource("13_mp8f5")
 
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1/HBoxContainer/Panel/fundo/btn_true" to="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer/container_1" method="_on_btn_true_pressed"]
