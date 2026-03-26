@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://b12trivvdnfbj"]
+[gd_scene format=3 uid="uid://c2xrg35y0ocjt"]
 
 [ext_resource type="Script" uid="uid://ca07m0h0lx0x0" path="res://scripts/container_1.4.gd" id="1_nt0ep"]
 [ext_resource type="Script" uid="uid://bum0xa0q721dg" path="res://scripts/pergunta_btn.gd" id="2_m26cb"]
 [ext_resource type="Texture2D" uid="uid://canl2jxa8knhd" path="res://assets/Sprite-0003.png" id="3_m26cb"]
 [ext_resource type="Texture2D" uid="uid://cffghwwtgn1hd" path="res://assets/Sprite-0002.png" id="4_8ofnq"]
 [ext_resource type="Script" uid="uid://c4w6srujr5fuo" path="res://cenas/container_2.4.gd" id="6_1aat4"]
-[ext_resource type="Script" uid="uid://bab40y11d7jx2" path="res://cenas/container_3.4.gd" id="7_m26cb"]
-[ext_resource type="Script" uid="uid://cu045xbgoo5cx" path="res://cenas/btn_enviar_1.4.gd" id="8_oae58"]
-[ext_resource type="Script" uid="uid://sfmjh46g5wyk" path="res://cenas/container_4.4.gd" id="9_nt0ep"]
+[ext_resource type="Script" path="res://cenas/container_3.4.gd" id="7_m26cb"]
+[ext_resource type="Script" path="res://cenas/btn_enviar_1.4.gd" id="8_oae58"]
+[ext_resource type="Script" path="res://cenas/container_4.4.gd" id="9_nt0ep"]
 [ext_resource type="Script" uid="uid://nuegs7goi4wk" path="res://scripts/btn_voltar.gd" id="12_3resb"]
 [ext_resource type="Texture2D" uid="uid://mskx3sf4g5s5" path="res://assets/Legenda_pergunta.png" id="13_mp8f5"]
 
