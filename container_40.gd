@@ -7,10 +7,10 @@ var correta4
 func _on_btn_false_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_false").texture_normal
 	panel.visible = false
-	correta4 = true
+	correta4 = false
 
 
 func _on_btn_true_pressed() -> void:
 	preview.texture = panel.get_node("fundo/btn_true").texture_normal
 	panel.visible = false
-	correta4 = false
+	correta4 = true
