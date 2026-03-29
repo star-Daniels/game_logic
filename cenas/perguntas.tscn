@@ -84,7 +84,6 @@ text = "Beto é mais velho que a programadora do fatorial"
 
 [node name="Label5" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=270588830]
 layout_mode = 2
-text = "Beto é mais velho que a programadora do fatorial"
 
 [node name="Label6" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1977945066]
 layout_mode = 2
