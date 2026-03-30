@@ -80,7 +80,7 @@ text = "Apenas o(a) engenheiro(a) tem curso superior e não é o(a) mais novo(a)
 
 [node name="Label4" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=436764131]
 layout_mode = 2
-text = "Para ser  ser direto de uma construtora, é necessario ter curso superior"
+text = "Para ser  ser diretor de uma construtora, é necessario ter curso superior"
 
 [node name="Label5" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=1722473199]
 layout_mode = 2

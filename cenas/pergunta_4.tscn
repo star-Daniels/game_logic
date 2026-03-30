@@ -63,10 +63,6 @@ layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/separation = 15
 
-[node name="Label" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=470307672]
-layout_mode = 2
-text = "Beto é mais velho que a programadora do fatorial"
-
 [node name="Label2" type="Label" parent="Control/MarginContainer/TextureRect/MarginContainer/VBoxContainer" unique_id=117208495]
 layout_mode = 2
 text = "Ou luciana é cozinheira ou Walter é educador."
