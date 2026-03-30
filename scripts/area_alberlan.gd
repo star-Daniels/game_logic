@@ -8,7 +8,7 @@ func _on_body_entered(body: Node2D) -> void:
 		texto.visible = true
 		escrever(" Boa noite caro aluno Jodilton")
 		await get_tree().create_timer(4.05).timeout
-		escrever("hoje você ira resolver 5 problemas 
+		escrever("hoje você ira resolver 4 problemas 
 		lógicos a fim de trabalhar seu raciocínio. ")
 		await get_tree().create_timer(6.05).timeout
 		escrever("Vá para o Computador")
